@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
+import Footer from './Footer';
 
 class Navbar extends Component {
   render() {
@@ -32,14 +35,20 @@ class Navbar extends Component {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#about">
-                  About
-                </a>
+                <Link
+                  className="nav-link"
+                  to={{ pathname: '/', state: { prev: false } }}
+                >
+                  Hellow World
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#experience">
-                  Experience
-                </a>
+                <Link
+                  className="nav-link"
+                  to={{ pathname: '/experiences', state: { prev: true } }}
+                >
+                  Experiences
+                </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link js-scroll-trigger" href="#education">
@@ -56,13 +65,9 @@ class Navbar extends Component {
                   Interests
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#awards">
-                  Awards
-                </a>
-              </li>
             </ul>
           </div>
+          <Footer />
         </nav>
       </div>
     );

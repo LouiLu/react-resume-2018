@@ -30,3 +30,45 @@
     transform: rotate(360deg);
   }
 }
+
+/* Page */
+
+.page {
+  position: fixed;
+  overflow-y: scroll;
+  max-height: 100vh;
+  top: 0;
+  -webkit-overflow-scrolling: touch;
+  transition: transform 1s ease-in-out, box-shadow 1s ease-in-out;
+}
+
+.page-enter {
+  transform: translate(0, -100%);
+}
+
+.page-enter-active {
+  transform: translate(0, 0);
+}
+
+.page-exit {
+  /* box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.5) inset; */
+  transform: translate(0, -100%);
+}
+
+.page--prev.page-enter {
+  transform: translate(0, 100%);
+}
+
+.page--prev.page-enter-active {
+  transform: translate(0, 0);
+}
+
+.page--prev.page-exit {
+  transform: translate(0, 100%);
+}
+
+.page-exit .page__inner {
+  opacity: 0;
+  scale: (0.8);
+  transition: opacity 1s ease-in-out, scale 1s linear;
+}
