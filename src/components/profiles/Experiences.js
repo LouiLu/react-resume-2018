@@ -14,7 +14,7 @@ export default class Experiences extends Component {
 
             <div className="resume-item d-flex flex-column flex-md-row mb-5 text-left">
               <div className="resume-content mr-auto">
-                <h3 className="mb-0">Senior Web Developer</h3>
+                <h3 className="experience-title">Senior Web Developer</h3>
                 <div className="subheading mb-3">Intelitec Solutions</div>
                 <p>
                   Bring to the table win-win survival strategies to ensure
@@ -32,7 +32,7 @@ export default class Experiences extends Component {
 
             <div className="resume-item d-flex flex-column flex-md-row mb-5 text-left">
               <div className="resume-content mr-auto">
-                <h3 className="mb-0">Web Developer</h3>
+                <h3 className="experience-title">Web Developer</h3>
                 <div className="subheading mb-3">Intelitec Solutions</div>
                 <p>
                   Capitalize on low hanging fruit to identify a ballpark value
@@ -49,7 +49,7 @@ export default class Experiences extends Component {
 
             <div className="resume-item d-flex flex-column flex-md-row mb-5 text-left">
               <div className="resume-content mr-auto">
-                <h3 className="mb-0">Junior Web Designer</h3>
+                <h3 className="experience-title">Junior Web Designer</h3>
                 <div className="subheading mb-3">Shout! Media Productions</div>
                 <p>
                   Podcasting operational change management inside of workflows
@@ -66,7 +66,7 @@ export default class Experiences extends Component {
 
             <div className="resume-item d-flex flex-column flex-md-row text-left">
               <div className="resume-content mr-auto">
-                <h3 className="mb-0">Web Design Intern</h3>
+                <h3 className="experience-title">Web Design Intern</h3>
                 <div className="subheading mb-3">Shout! Media Productions</div>
                 <p>
                   Collaboratively administrate empowered markets via

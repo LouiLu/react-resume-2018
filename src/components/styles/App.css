@@ -31,6 +31,10 @@
   }
 }
 
+.social-icons a {
+  font-size: 15px;
+}
+
 /* Page */
 
 .page {
@@ -71,4 +75,28 @@
   opacity: 0;
   scale: (0.8);
   transition: opacity 1s ease-in-out, scale 1s linear;
+}
+
+.experience-title {
+  display: inline-block;
+  position: relative;
+  margin-left: -30px;
+  padding: 5px 30px 5px 30px;
+  background: #bd5d38;
+  color: #fff;
+}
+.experience-title::after {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  width: 10px;
+  height: 0;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid #343a40;
+}
+
+.resume-item {
+  padding-left: 1.5em;
 }

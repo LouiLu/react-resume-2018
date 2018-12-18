@@ -4,7 +4,23 @@ export default function Footer() {
   return (
     <div>
       <footer id="footer" className="bg-dark text-white mt-5 p-2 text-center">
-        Coypright &copy; {new Date().getFullYear()} Smallulu Resume
+        <div className="social-icons">
+          <a href="">
+            <i className="fab fa-linkedin-in fa-sm" />
+          </a>
+          <a href="">
+            <i className="fab fa-github" />
+          </a>
+          <a href="">
+            <i className="fab fa-twitter" />
+          </a>
+          <a href="">
+            <i className="fab fa-facebook-f" />
+          </a>
+        </div>
+        <small>
+          Coypright &copy; {new Date().getFullYear()} Smallulu Resume
+        </small>
       </footer>
     </div>
   );
