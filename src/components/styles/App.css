@@ -39,11 +39,25 @@
 
 .page {
   position: fixed;
-  overflow-y: scroll;
+  overflow-y: auto;
   max-height: 100vh;
+  /* width: 100%; */
+  /* padding-right: 20%; */
   top: 0;
   -webkit-overflow-scrolling: touch;
   transition: transform 1s ease-in-out, box-shadow 1s ease-in-out;
+}
+
+.navbar-toggler {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+@media only screen and (max-width: 992px) {
+  #footer {
+    display: none;
+  }
 }
 
 .page-enter {

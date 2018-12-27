@@ -9,6 +9,8 @@ import Navbar from './layout/Navbar';
 import Landing from './layout/Landing';
 import Experiences from './profiles/Experiences';
 import NotFound from './not-found/NotFound';
+import Educations from './profiles/Educations';
+import Skills from './profiles/Skills';
 
 class App extends Component {
   render() {
@@ -32,6 +34,8 @@ class App extends Component {
                         path="/experiences"
                         component={Experiences}
                       />
+                      <Route exact path="/educations" component={Educations} />
+                      <Route exact path="/skills" component={Skills} />
                       <Route component={NotFound} />
                     </Switch>
                   </CSSTransition>

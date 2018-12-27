@@ -51,19 +51,20 @@ class Navbar extends Component {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#education">
+                <Link
+                  className="nav-link"
+                  to={{ pathname: '/educations', state: { prev: true } }}
+                >
                   Education
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#skills">
+                <Link
+                  className="nav-link"
+                  to={{ pathname: '/skills', state: { prev: true } }}
+                >
                   Skills
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#interests">
-                  Interests
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

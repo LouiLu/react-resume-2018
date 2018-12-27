@@ -14,69 +14,32 @@ export default class Experiences extends Component {
 
             <div className="resume-item d-flex flex-column flex-md-row mb-5 text-left">
               <div className="resume-content mr-auto">
-                <h3 className="experience-title">Senior Web Developer</h3>
-                <div className="subheading mb-3">Intelitec Solutions</div>
+                <h3 className="experience-title">Software Engineer</h3>
+                <div className="subheading mb-3">
+                  ComNet Telecom Ltd. (Canada)
+                </div>
                 <p>
-                  Bring to the table win-win survival strategies to ensure
-                  proactive domination. At the end of the day, going forward, a
-                  new normal that has evolved from generation X is on the runway
-                  heading towards a streamlined cloud solution. User generated
-                  content in real-time will have multiple touchpoints for
-                  offshoring.
+                  PHP, Perl, Magento, Wordpress, Apache, PhotoShop, Web Design.
                 </p>
               </div>
               <div className="resume-date text-md-right">
-                <span className="text-primary">March 2013 - Present</span>
+                <span className="text-primary">January 2016 - Present</span>
               </div>
             </div>
 
             <div className="resume-item d-flex flex-column flex-md-row mb-5 text-left">
               <div className="resume-content mr-auto">
-                <h3 className="experience-title">Web Developer</h3>
-                <div className="subheading mb-3">Intelitec Solutions</div>
+                <h3 className="experience-title">DevOps Engineer</h3>
+                <div className="subheading mb-3">Ericcson Canada</div>
                 <p>
-                  Capitalize on low hanging fruit to identify a ballpark value
-                  added activity to beta test. Override the digital divide with
-                  additional clickthroughs from DevOps. Nanotechnology immersion
-                  along the information highway will close the loop on focusing
-                  solely on the bottom line.
+                  Taking care of internal tools (developed by Perl mostly). Make
+                  new tools based on requests.
                 </p>
               </div>
               <div className="resume-date text-md-right">
-                <span className="text-primary">December 2011 - March 2013</span>
-              </div>
-            </div>
-
-            <div className="resume-item d-flex flex-column flex-md-row mb-5 text-left">
-              <div className="resume-content mr-auto">
-                <h3 className="experience-title">Junior Web Designer</h3>
-                <div className="subheading mb-3">Shout! Media Productions</div>
-                <p>
-                  Podcasting operational change management inside of workflows
-                  to establish a framework. Taking seamless key performance
-                  indicators offline to maximise the long tail. Keeping your eye
-                  on the ball while performing a deep dive on the start-up
-                  mentality to derive convergence on cross-platform integration.
-                </p>
-              </div>
-              <div className="resume-date text-md-right">
-                <span className="text-primary">July 2010 - December 2011</span>
-              </div>
-            </div>
-
-            <div className="resume-item d-flex flex-column flex-md-row text-left">
-              <div className="resume-content mr-auto">
-                <h3 className="experience-title">Web Design Intern</h3>
-                <div className="subheading mb-3">Shout! Media Productions</div>
-                <p>
-                  Collaboratively administrate empowered markets via
-                  plug-and-play networks. Dynamically procrastinate B2C users
-                  after installed base benefits. Dramatically visualize customer
-                  directed convergence without revolutionary ROI.
-                </p>
-              </div>
-              <div className="resume-date text-md-right">
-                <span className="text-primary">September 2008 - June 2010</span>
+                <span className="text-primary">
+                  January 2014 - September 2014
+                </span>
               </div>
             </div>
           </div>
