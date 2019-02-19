@@ -3,11 +3,10 @@
  * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
+@import url('https://fonts.googleapis.com/css?family=Nova+Flat');
 
 body {
-  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'Nova Flat', cursive;
   padding-top: 54px;
   color: #fff;
 }
@@ -25,9 +24,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'Nova Flat', cursive;
   font-weight: 700;
   text-transform: uppercase;
   color: #343a40;
@@ -54,9 +51,7 @@ p.lead {
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'Nova Flat', cursive;
   font-size: 1.5rem;
 }
 
@@ -87,6 +82,10 @@ p.lead {
 
 .dev-icons .list-inline-item i:hover {
   color: #679436;
+}
+
+#sideNav {
+  z-index: 998;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -210,5 +209,80 @@ a:active {
   border-radius: 50%;
   pointer-events: none;
   /* transition: 0.1s; */
+  mix-blend-mode: difference;
+}
+
+/* Loader CSS */
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: fadeOut 2.5s linear forwards;
+}
+@keyframes fadeOut {
+  0%,
+  91% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.loading h2 {
+  color: #000;
+}
+
+.loading .loading-bar {
+  position: relative;
+  width: 400px;
+  height: 40px;
+  background: transparent;
+  margin: 0 20px;
+  border: 2px solid #000;
+  box-sizing: border-box;
+}
+.loading .loading-bar:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  animation: animate 2s linear forwards;
+  transform-origin: left;
+}
+@keyframes animate {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.loading .loading-bar:after {
+  content: 'Loading...';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+  line-height: 36px;
+  color: #fff;
   mix-blend-mode: difference;
 }
